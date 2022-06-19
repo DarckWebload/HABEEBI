@@ -769,60 +769,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(        
             text="Select your required mode from below!",
             reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "help":
-        buttons = [[
-            InlineKeyboardButton('ᴀᴅᴍɪɴ ', callback_data='admin'),
-            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛ ', callback_data='coct'),
-            InlineKeyboardButton('ғɪʟᴛᴇʀ ', callback_data='auto_manual')
-            ],[
-            InlineKeyboardButton('ɢᴛʀᴀɴs ', callback_data='gtrans'),
-            InlineKeyboardButton('ɪɴғᴏ ', callback_data='info'),
-            InlineKeyboardButton('ᴘᴀsᴛᴇ ', callback_data='paste')
-            ],[
-            InlineKeyboardButton('ᴘᴜʀɢᴇ ', callback_data='purge'),
-            InlineKeyboardButton('ʀᴇsᴛʀɪᴄᴛ ', callback_data='restric'),
-            InlineKeyboardButton('sᴇᴀʀᴄʜ ', callback_data='search')
-            ],[
-            InlineKeyboardButton('ᴛɢʀᴀᴘʜ ', callback_data='tgraph'),
-            InlineKeyboardButton('ᴡʜᴏɪs ', callback_data='whois'),
-            InlineKeyboardButton('ғᴜɴ ', callback_data='fun')
-            ],[
-            InlineKeyboardButton('ᴀʟɪᴠᴇ ', callback_data='alive'),
-            InlineKeyboardButton('sᴏɴɢ ', callback_data='song'),
-            InlineKeyboardButton('ᴊsᴏɴ ', callback_data='json')
-            ],[
-            InlineKeyboardButton('ᴘɪɴ ', callback_data='pin'),
-            InlineKeyboardButton('ᴄᴏʀᴏɴᴀ ', callback_data='corona'),
-            InlineKeyboardButton('sᴛɪᴄᴋᴇʀ ', callback_data='stickerid')
-            ],[
-            InlineKeyboardButton('ᴛᴛꜱ', callback_data='ttss'),
-            InlineKeyboardButton('yᴛ-ᴛʜᴜᴍʙ', callback_data='ytthumb'),
-            InlineKeyboardButton('ᴀᴜᴅɪᴏ-ʙᴏᴏᴋ', callback_data='abook')
-            ],[
-            InlineKeyboardButton('ᴜʀʟ-sʜᴏʀᴛ', callback_data='urlshort'),
-            InlineKeyboardButton('ʀᴇᴩᴏʀᴛ', callback_data='report'),
-            InlineKeyboardButton("ᴠɪᴅᴇᴏ", callback_data='video')
-            ],[
-            InlineKeyboardButton('ᴋɪᴄᴋ', callback_data='zombies'),
-            InlineKeyboardButton('ᴍᴜᴛᴇ', callback_data='restric'),
-            InlineKeyboardButton('ꜰɪʟᴇ-ꜱᴛᴏʀᴇ', callback_data='newdata')
-            ],[
-            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ', callback_data='sorse'),
-            InlineKeyboardButton('ɢɪᴛʜᴜʙ', callback_data='github'),
-            InlineKeyboardButton("ɪᴍᴀɢᴇ", callback_data='image')
-            ],[
-            InlineKeyboardButton('🚶‍♀️ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ꜱᴛᴀᴛᴜꜱ 🎛️', callback_data='stats'),
-            InlineKeyboardButton('ᴄʟᴏꜱᴇ ⛔️', callback_data='close_data')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode='html'       
         )
     elif query.data == "hellp":
         buttons = [[
