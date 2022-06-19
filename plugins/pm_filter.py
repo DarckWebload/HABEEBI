@@ -793,6 +793,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('sᴏɴɢ ', callback_data='song'),
             InlineKeyboardButton('ᴊsᴏɴ ', callback_data='json')
             ],[
+            InlineKeyboardButton('ɴᴇxᴛ', callback_data='nxt'),
+            InlineKeyboardButton('🚶‍♀️ ʙᴀᴄᴋ', callback_data='start')
+        )
+    elif query.data == "nxt":
+        buttons = [[
             InlineKeyboardButton('ᴘɪɴ ', callback_data='pin'),
             InlineKeyboardButton('ᴄᴏʀᴏɴᴀ ', callback_data='corona'),
             InlineKeyboardButton('sᴛɪᴄᴋᴇʀ ', callback_data='stickerid')
